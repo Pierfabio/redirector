@@ -9,6 +9,7 @@ type Config struct {
 	SecondUrlRedirect string `mapstructure:"SECOND_URL_REDIRECT"`
 	FolderContents    string `mapstructure:"FOLDER_CONTENT"`
 	Protocol          string `mapstructure:"PROTOCOL"`
+	Localhost         string `mapstructure:"LOCALHOST"`
 }
 
 func LoadConfig(path string) (config Config, err error) {
